@@ -2,11 +2,11 @@
 Generic RPG Dungeon Crawler Game.
 
 ## Changelog
-### v1.0.x
+### 1.0.x
 * Fixed a bug where restarting the game after winning or losing would not reset the dungeon
 * Added a cursor
 * Added a missing include
-### v1.0
+### 1.0
 * Initial build
 
 ## Issues/Bugs
