@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 
-int main()
+Dungeon dungeonSetup()
 {
 	// Set up the player
 	std::cout << "Welcome to a generic RPG game! What is your name?\n>> ";
@@ -17,13 +17,13 @@ int main()
 
 	// Set up the first room
 	Room firstRoom = Room(0, false, std::vector<Item>(), std::vector<GameCharacter>());
-	
+
 	// Set up the second room
 	Item sword = Item("Sword", 0, 20, 0);
 	std::vector<Item> secondRoomItems;
 	secondRoomItems.push_back(sword);
 	Room secondRoom = Room(1, false, secondRoomItems, std::vector<GameCharacter>());
-	
+
 	// Set up the third room
 	GameCharacter firstEnemy{ GameCharacter("Imp", 50, 15, 5) };
 	std::vector<GameCharacter> thirdRoomEnemies;
@@ -43,8 +43,15 @@ int main()
 	dungeon.rooms[2] = thirdRoom;
 	dungeon.rooms[3] = fourthRoom;
 
+	return dungeon;
+}
+
+int main()
+{
 	while (true)
 	{
+		Dungeon dungeon{ dungeonSetup() };
+
 		int result{ dungeon.runDungeon() };
 		if (result == 0)
 		{
