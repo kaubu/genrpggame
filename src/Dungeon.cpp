@@ -19,6 +19,7 @@ void Dungeon::printActions(int numActions, std::string actions[])
 	{
 		std::cout << actions[i] << '\n';
 	}
+	std::cout << ">> ";
 }
 
 void Dungeon::handleFightActions(GameCharacter *enemy)
