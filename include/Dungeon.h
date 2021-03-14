@@ -2,6 +2,7 @@
 #define DUNGEON_H
 
 #include "Player.h"
+#include "GameCharacter.h"
 #include "Room.h"
 #include <string>
 
