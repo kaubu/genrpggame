@@ -10,7 +10,7 @@
 int main()
 {
 	// Set up the player
-	std::cout << "Welcome to a generic RPG game! What is your name?\n";
+	std::cout << "Welcome to a generic RPG game! What is your name?\n>> ";
 	std::string playerName;
 	std::cin >> playerName;
 	Player player = Player(playerName, 100, 20, 10);
