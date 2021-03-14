@@ -19,7 +19,7 @@ Dungeon dungeonSetup()
 	Room firstRoom{ Room(0, false, std::vector<Item>(), std::vector<GameCharacter>()) };
 
 	// Set up the second room
-	Item sword = Item("Sword", 0, 20, 0);
+	Item sword{ Item("Sword", 0, 20, 0) };
 	std::vector<Item> secondRoomItems;
 	secondRoomItems.push_back(sword);
 	Room secondRoom{ Room(1, false, secondRoomItems, std::vector<GameCharacter>()) };
