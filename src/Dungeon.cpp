@@ -48,7 +48,8 @@ void Dungeon::handleFightActions(GameCharacter *enemy)
 			enterRoom(player.currentRoom);
 			return;
 		}
-		else {
+		else
+		{
 			std::cout << "Incorrect choice.\n";
 		}
 
@@ -100,7 +101,8 @@ void Dungeon::handleRoomWithEnemy(Room *room)
 			enterRoom(player.currentRoom);
 			return;
 		}
-		else {
+		else
+		{
 			std::cout << "Incorrect choice.\n";
 		}
 	}
@@ -144,7 +146,8 @@ void Dungeon::handleRoomWithChest(Room *room)
 		{
 			return;
 		}
-		else {
+		else
+		{
 			std::cout << "Incorrect choice.\n";
 		}
 	}
@@ -167,7 +170,8 @@ void Dungeon::handleEmptyRoom(Room *room)
 		{
 			return;
 		}
-		else {
+		else
+		{
 			std::cout << "Incorrect choice.\n";
 		}
 	}
@@ -183,7 +187,8 @@ void Dungeon::enterRoom(Room *room)
 	{
 		handleRoomWithChest(room);
 	}
-	else {
+	else
+	{
 		handleEmptyRoom(room);
 	}
 }
